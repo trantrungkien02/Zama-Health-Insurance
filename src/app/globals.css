@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +23,69 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.medical-glow {
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.3);
+}
+
+.privacy-shield {
+  background: linear-gradient(135deg, rgba(90, 219, 181, 0.1), rgba(37, 99, 235, 0.1));
+  border: 2px solid rgba(90, 219, 181, 0.3);
+}
+
+.encrypted-data {
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(45deg, #5adbb5, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.health-input {
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.health-input:focus {
+  border-color: #5adbb5;
+  box-shadow: 0 0 0 3px rgba(90, 219, 181, 0.1);
+}
+
+.processing-animation {
+  animation: processingPulse 2s ease-in-out infinite;
+}
+
+.data-flow {
+  animation: dataFlow 3s ease-in-out infinite;
+}
+
+.eligibility-result {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.2), rgba(16, 185, 129, 0.2));
+  border: 2px solid rgba(5, 150, 105, 0.5);
+  animation: resultGlow 2s ease-in-out infinite alternate;
+}
+
+.not-eligible-result {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2), rgba(239, 68, 68, 0.2));
+  border: 2px solid rgba(220, 38, 38, 0.5);
+}
+
+.contract-logic {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(90, 219, 181, 0.3);
+  font-family: 'Courier New', monospace;
+}
+
+.health-metric {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.1));
+  border-left: 4px solid #2563eb;
+}
+
+.shield-icon {
+  animation: shieldPulse 3s ease-in-out infinite;
 }
