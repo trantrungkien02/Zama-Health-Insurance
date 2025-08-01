@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 ZAMA Health Insurance App
 
-## Getting Started
+This is a modern Next.js web application demonstrating **secure health insurance eligibility checks** using **Fully Homomorphic Encryption (FHE)** on the Ethereum Virtual Machine (FHEVM).
 
-First, run the development server:
+Your health data remains **100% private** — encrypted end-to-end — even while being processed by a smart contract.
 
+---
+
+## 🚀 Features
+
+- 🔐 **Client-side Encryption** of Age, Blood Pressure, and Blood Sugar
+- 📦 **Smart Contract Simulation** for Insurance Eligibility
+- ✅ **End-to-End Privacy**: No real health data ever leaves your device in plaintext
+- 🎯 **FHE Logic Emulation**: Age > 60 OR Blood Pressure > 140 OR Blood Sugar > 180
+- 💡 **Step-by-Step UI Flow** with visual indicators
+- 🖼️ Beautifully styled using inline CSS and animation effects
+
+---
+
+## 🧠 Technologies Used
+
+- **Next.js** (React Framework)
+- **TypeScript**
+- **Zama FHEVM Mock Functions**
+- **Smart Contract Logic Simulation**
+- **Privacy & Encrypted Display Components**
+
+---
+
+## 📸 Screenshots
+
+| Health Input | Smart Contract | Result |
+|--------------|----------------|--------|
+| ✅ Age, BP, BS input | ✅ Encrypted FHE logic | ✅ Encrypted eligibility result |
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/health-insurance-fhevm.git
+cd health-insurance-fhevm
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the Development Server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+The app will run at http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🧪 Testing Instructions
+1. Run the app locally
+2. Connect your wallet (mocked button)
+3. Input values:
+- Age: e.g., 65
+- BP: e.g., 150
+- Sugar: e.g., 160
+4. Click "Check Insurance Eligibility"
+5. Watch each step animate through encryption → contract → decryption
+6. View result: "Eligible" or "Not Eligible"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔐 Privacy by Design
+- Your data is never stored or viewable by the app
+- All computation happens on encrypted inputs
+- Mimics a real FHEVM pipeline using mock services
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📄 License
+MIT © TranTrungKien02
